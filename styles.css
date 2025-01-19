@@ -1,0 +1,32 @@
+/*establish stable webpage and background color*/
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+/*sets text color and wiggle animation rule*/
+h1 {
+    font-size: 3rem;
+    color: #333;
+    animation: wiggle 2s infinite;
+    display: inline-block;
+}
+/*silly wiggly motion animation using keyframes*/
+@keyframes wiggle {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-10px) rotate(-10deg);
+    }
+    50% {
+        transform: translateX(10px) rotate(10deg);
+    }
+    75% {
+        transform: translateX(-5px) rotate(-5deg);
+    }
+}
